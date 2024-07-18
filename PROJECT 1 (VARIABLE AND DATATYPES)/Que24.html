@@ -1,0 +1,27 @@
+<!-- 24) Create a program that prompts the user for two numbers. If both numbers are positive, calculate and
+    print their average. If either number is negative, print an error message instead. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 24</title>
+</head>
+<body>
+    
+    <script>
+       let n1 = parseFloat(prompt("Enter Number 1:"));
+       let n2 = parseFloat(prompt("Enter Number 2:"));
+
+       if(n1 > 0 && n2 > 0)
+       {
+          let avg = (n1 + n2) / 2;
+          console.log("Average: "+avg);
+       }
+       else{
+        console.log("Error! Both the Numbers Should be Positive!");
+       }
+    </script>
+</body>
+</html>

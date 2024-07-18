@@ -1,0 +1,48 @@
+<!-- 28) Employee Salary Calculator
+
+Create a program to calculate the annual salary of an employee.
+
+- Declare variables to store the following information:
+
+    Basic Salary (Number)
+    House Rent Allowance (HRA) (Number)
+    Other Allowances (Number)
+
+- Write a function to calculate the total monthly salary and then the annual salary.
+- Initialize these variables with sample data.
+- Display the results using console.log() and innerHTML. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Salary Calculator</title>
+</head>
+<body>
+	<h1>Employee Salary Calculator</h1>
+	<div id="result"></div>
+	<script>
+		// Declare variables to store the employee's salary information
+		let basicSalary = 50000;
+		let hra = 10000;
+		let otherAllowances = 5000;
+
+		// a function to calculate the total monthly salary and then the annual salary
+		function calculateSalary(basic, hra, other) {
+			let totalMonthlySalary = basic + hra + other;
+			let annualSalary = totalMonthlySalary * 12;
+			return annualSalary;
+		}
+
+		// Initialize the variables with sample data
+		basicSalary = 50000;
+		hra = 10000;
+		otherAllowances = 5000;
+
+		// Display the results using console.log() and innerHTML
+		let annualSalary = calculateSalary(basicSalary, hra, otherAllowances);
+		console.log("Annual Salary: " + annualSalary);
+		document.getElementById("result").innerHTML += "Annual Salary: " + annualSalary;
+	</script>
+</body>
+</html>

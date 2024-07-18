@@ -1,0 +1,32 @@
+<!-- 3) Write code that demonstrates the difference between let and const.
+   Create two variables, one using let to store a student's grade (which can change) and
+   another using const to store their name (which shouldn't change). Modify the grade 
+   variable but attempt to modify the name variable. Observe the outcome. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3</title>
+</head>
+<body>
+    
+    <script>
+        // first Variable declaration
+        let grade = "A";
+
+        // second variable declaration
+        const name = "Arpita"
+
+        // modifing the grade variable
+        grade = "B";
+        console.log(grade);
+
+        // attempting to modify the name variable
+        name = "Diya";
+        console.log(name); //shows the error = TypeError: Assignment to constant variable.
+        
+    </script>
+</body>
+</html>

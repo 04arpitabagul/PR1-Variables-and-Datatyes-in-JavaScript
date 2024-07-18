@@ -1,0 +1,40 @@
+<!-- 20) Declare variables x and y with initial values 10 and 20. 
+    Swap their values without using a third variable. Print the variables before and after swapping. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 20</title>
+</head>
+<body>
+    
+    <script>
+        var x = 10;
+        var y = 20;
+
+        document.write("Before Swapping");
+        document.write("<br>");
+        document.write("X: ", x);
+        document.write("<br>");
+        document.write("Y: ", y);
+        document.write("<br>");
+        document.write("<br>");
+
+        // swapping without using third variable
+        x=x+y;
+        y=x-y;
+        x=x-y;
+
+        document.write("After Swapping");
+        document.write("<br>");
+        document.write("X: ", x);
+        document.write("<br>");
+        document.write("Y: ", y);
+
+
+
+    </script>
+</body>
+</html>
